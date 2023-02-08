@@ -1,0 +1,1 @@
+ls -1 --ignore='.*' $(ls -1 --ignore='.*' | grep '^[^.]') | awk '{if (system("test -d \"" $0 "\"")) printf("%s,\n", $0); else printf("%s/,\n", $0);}' > midLS
