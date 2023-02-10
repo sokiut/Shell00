@@ -1,0 +1,1 @@
+echo -r--r-xr-x@ | sed 's/@//g'
